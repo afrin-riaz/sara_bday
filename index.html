@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 23rd Birthday, Sara Kutty 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ LOADING SCREEN ═══════════════════════════════════════ -->
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-hearts">
+        <span>🌸</span><span>💕</span><span>🌸</span>
+      </div>
+      <p class="loader-text">Getting Sara's birthday ready...</p>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SCROLL PROGRESS ═══════════════════════════════════════ -->
+  <div id="scroll-progress"></div>
+
+  <!-- ═══════════════════════════════════════ NAV CONTROLS ═══════════════════════════════════════ -->
+  <div id="top-controls">
+    <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">🌙</button>
+    <button id="music-toggle" aria-label="Toggle background music" title="Toggle background music">🎵</button>
+    <!-- 🎵 MUSIC: Replace /assets/birthday_music.mp3 with your audio file -->
+    <audio id="bg-music" loop>
+      <source src="assets/birthday_music.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <!-- ═══════════════════════════════════════ HERO SECTION ═══════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-orbs">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+    </div>
+    <div class="floating-hearts" id="floating-hearts-hero"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">June 17th · A Very Special Day</p>
+      <h1 class="hero-title">Happy 23rd Birthday<br /><span class="hero-name">Sara Kutty</span></h1>
+      <div class="rotating-subtitle-wrap">
+        <span class="rotating-prefix">You are </span>
+        <span id="rotating-subtitle" class="rotating-subtitle"></span>
+      </div>
+      <a href="#amazing" class="hero-cta" id="begin-btn">Begin Sara's Birthday Journey ✨</a>
+    </div>
+    <div class="hero-scroll-hint">scroll down ↓</div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SECTION 1: WHY SARA IS AMAZING ═══════════════════════════════════════ -->
+  <section id="amazing" class="section">
+    <div class="container">
+      <p class="section-eyebrow">Just a few reasons (out of infinite)</p>
+      <h2 class="section-title">Why Sara Is Amazing</h2>
+      <div class="cards-grid">
+
+        <div class="trait-card reveal" data-delay="0">
+          <div class="card-icon">💪</div>
+          <h3>Strongest Bubbu</h3>
+          <p>Let's be honest — the bicep flex is basically her signature move at this point. She doesn't just work out, she <em>performs</em>. Add a rock-solid personality and unshakeable confidence, and you have a force of nature wrapped in one very adorable person.</p>
+          <div class="card-tag">Confidence: Legendary</div>
+        </div>
+
+        <div class="trait-card reveal" data-delay="100">
+          <div class="card-icon">⚽</div>
+          <h3>Football Queen</h3>
+          <p>She watches, she plays, she argues tactics like a pundit. On the pitch or on the sofa, her competitive spirit is something else entirely. If football had a cheerleader and a player and a coach all in one body — that's Sara.</p>
+          <div class="card-tag">Competitive Level: Max</div>
+        </div>
+
+        <div class="trait-card reveal" data-delay="200">
+          <div class="card-icon">🐒</div>
+          <h3>Goofy Monkey</h3>
+          <p>There's a reason her nickname is Monkey. The faces, the noises, the completely chaotic energy that appears out of nowhere — she has turned goofiness into an art form. Every memory involving her is somehow hilarious in retrospect.</p>
+          <div class="card-tag">Chaos Level: Infinite</div>
+        </div>
+
+        <div class="trait-card reveal" data-delay="300">
+          <div class="card-icon">🌸</div>
+          <h3>Flower Girl</h3>
+          <p>Hand Sara a bouquet and watch her transform. There's something about flowers that brings out the softest, happiest version of her — the kind of joy that reaches her eyes first. She was made to be surrounded by things that bloom.</p>
+          <div class="card-tag">Softness: Endless</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SECTION 2: GOOFY HALL OF FAME ═══════════════════════════════════════ -->
+  <section id="goofy" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow">Presented with love and absolutely no apology</p>
+      <h2 class="section-title">Goofy Hall of Fame 🏆</h2>
+      <p class="section-subtitle">The committee has reviewed the evidence and reached a unanimous verdict.</p>
+
+      <!-- 📸 PHOTOS: Replace goofy1.jpg – goofy6.jpg in /assets/ with Sara's actual goofy photos -->
+      <div class="masonry-grid">
+        <div class="masonry-item reveal">
+          <div class="photo-wrap">
+            <img src="assets/goofy1.jpg" alt="Sara being extremely Sara" loading="lazy" onerror="this.closest('.photo-wrap').classList.add('placeholder')" />
+            <div class="photo-overlay">
+              <p class="photo-caption">"Scientific proof that Sara is chaos." 🔬</p>
+            </div>
+          </div>
+        </div>
+        <div class="masonry-item reveal" data-delay="80">
+          <div class="photo-wrap">
+            <img src="assets/goofy2.jpg" alt="Monkey mode activated" loading="lazy" onerror="this.closest('.photo-wrap').classList.add('placeholder')" />
+            <div class="photo-overlay">
+              <p class="photo-caption">"Monkey mode: fully activated." 🐒</p>
+            </div>
+          </div>
+        </div>
+        <div class="masonry-item reveal" data-delay="160">
+          <div class="photo-wrap">
+            <img src="assets/goofy3.jpg" alt="Award-worthy face" loading="lazy" onerror="this.closest('.photo-wrap').classList.add('placeholder')" />
+            <div class="photo-overlay">
+              <p class="photo-caption">"This face deserves an award." 🏆</p>
+            </div>
+          </div>
+        </div>
+        <div class="masonry-item reveal" data-delay="240">
+          <div class="photo-wrap">
+            <img src="assets/goofy4.jpg" alt="Peak Bubbu energy" loading="lazy" onerror="this.closest('.photo-wrap').classList.add('placeholder')" />
+            <div class="photo-overlay">
+              <p class="photo-caption">"Peak Bubbu energy." ⚡</p>
+            </div>
+          </div>
+        </div>
+        <div class="masonry-item reveal" data-delay="320">
+          <div class="photo-wrap">
+            <img src="assets/goofy5.jpg" alt="Certified chaotic" loading="lazy" onerror="this.closest('.photo-wrap').classList.add('placeholder')" />
+            <div class="photo-overlay">
+              <p class="photo-caption">"No thoughts, only vibes." ✨</p>
+            </div>
+          </div>
+        </div>
+        <div class="masonry-item reveal" data-delay="400">
+          <div class="photo-wrap">
+            <img src="assets/goofy6.jpg" alt="The face that started it all" loading="lazy" onerror="this.closest('.photo-wrap').classList.add('placeholder')" />
+            <div class="photo-overlay">
+              <p class="photo-caption">"Exhibit F: the defense rests." 👩‍⚖️</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ LIGHTBOX ═══════════════════════════════════════ -->
+  <div id="lightbox">
+    <button id="lightbox-close">✕</button>
+    <img id="lightbox-img" src="" alt="" />
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SECTION 3: BABY SARA TIMELINE ═══════════════════════════════════════ -->
+  <section id="timeline" class="section">
+    <div class="container">
+      <p class="section-eyebrow">Before she became my Sara Kutty...</p>
+      <h2 class="section-title">The Origin Story 🌟</h2>
+      <p class="section-subtitle">Every chaos queen has a beginning.</p>
+
+      <div class="timeline-track">
+
+        <!-- 📸 PHOTOS: Replace baby1.jpg – baby4.jpg in /assets/ with Sara's childhood photos -->
+        <div class="timeline-item reveal">
+          <div class="timeline-photo-wrap">
+            <img src="assets/baby1.jpg" alt="Baby Sara" loading="lazy" onerror="this.closest('.timeline-photo-wrap').classList.add('placeholder')" />
+          </div>
+          <div class="timeline-text">
+            <span class="timeline-badge">Chapter I</span>
+            <h3>The Arrival</h3>
+            <p>The world had no idea what was coming. A small baby. Tiny hands. Completely innocent looking. (Spoiler: she was already plotting the chaos.)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--reverse reveal" data-delay="120">
+          <div class="timeline-photo-wrap">
+            <img src="assets/baby2.jpg" alt="Baby Sara growing up" loading="lazy" onerror="this.closest('.timeline-photo-wrap').classList.add('placeholder')" />
+          </div>
+          <div class="timeline-text">
+            <span class="timeline-badge">Chapter II</span>
+            <h3>The Mischief Begins</h3>
+            <p>She discovered she could make people laugh. And she never looked back. The goofy faces had their first audition, and they passed with flying colours.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-delay="240">
+          <div class="timeline-photo-wrap">
+            <img src="assets/baby3.jpg" alt="Young Sara" loading="lazy" onerror="this.closest('.timeline-photo-wrap').classList.add('placeholder')" />
+          </div>
+          <div class="timeline-text">
+            <span class="timeline-badge">Chapter III</span>
+            <h3>Football & Flowers</h3>
+            <p>Somewhere between the football matches and the flower shops, she was becoming herself — competitive, soft, loud, gentle. All of it, somehow, at once.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--reverse reveal" data-delay="360">
+          <div class="timeline-photo-wrap">
+            <img src="assets/baby4.jpg" alt="Sara becoming herself" loading="lazy" onerror="this.closest('.timeline-photo-wrap').classList.add('placeholder')" />
+          </div>
+          <div class="timeline-text">
+            <span class="timeline-badge">Chapter IV</span>
+            <h3>Almost There</h3>
+            <p>She was growing into someone remarkable — without even realising it. The world was getting ready for Sara Jain, even if it didn't know it yet.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="timeline-ending reveal">
+        <div class="timeline-heart">💕</div>
+        <p>"And somehow this little girl grew into the most beautiful person I know."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SECTION 4: FLOWER PRINCESS ═══════════════════════════════════════ -->
+  <section id="flowers" class="section section-alt">
+    <div class="floating-petals" id="floating-petals"></div>
+    <div class="container container--narrow">
+      <p class="section-eyebrow">In her natural habitat</p>
+      <h2 class="section-title">Flowers Love Sara Too 🌸</h2>
+      <!-- 📸 PHOTO: Replace flowers.jpg in /assets/ with Sara's flowers photo -->
+      <div class="flower-frame-wrap reveal">
+        <div class="flower-frame">
+          <img src="assets/flowers.jpg" alt="Sara with flowers" loading="lazy" onerror="this.classList.add('placeholder-img')" />
+          <div class="flower-corner flower-corner--tl">🌺</div>
+          <div class="flower-corner flower-corner--tr">🌷</div>
+          <div class="flower-corner flower-corner--bl">🌹</div>
+          <div class="flower-corner flower-corner--br">🌸</div>
+        </div>
+        <p class="flower-caption">Some people are just made for flowers. Sara is one of them.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SECTION 5: FOOTBALL & MUSCLES ═══════════════════════════════════════ -->
+  <section id="stats" class="section">
+    <div class="container">
+      <p class="section-eyebrow">Verified data, no bias whatsoever</p>
+      <h2 class="section-title">The Sara Jain Stats 📊</h2>
+      <div class="split-section">
+
+        <div class="split-panel split-panel--football reveal">
+          <div class="split-icon">⚽</div>
+          <h3>On the Pitch</h3>
+          <p>Passionate. Competitive. Loud when her team scores. Absolutely insufferable when her team wins. This is football through Sara's eyes — and it's kind of beautiful.</p>
+          <div class="football-badge">The Football Queen</div>
+        </div>
+
+        <div class="split-panel split-panel--strength reveal" data-delay="150">
+          <div class="split-icon">💪</div>
+          <h3>On the Gains</h3>
+          <p>The bicep flex is not optional. It is, in fact, mandatory at all times. She has earned those arms, and she will show them to you whether you asked or not. Respect it.</p>
+          <div class="strength-badge">The Strongest Bubbu</div>
+        </div>
+
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card reveal" data-delay="0">
+          <div class="stat-bar-wrap">
+            <div class="stat-bar" data-target="100"></div>
+          </div>
+          <p class="stat-label">Football Passion</p>
+          <p class="stat-value" data-final="100%">0%</p>
+        </div>
+        <div class="stat-card reveal" data-delay="100">
+          <div class="stat-bar-wrap">
+            <div class="stat-bar" data-target="100"></div>
+          </div>
+          <p class="stat-label">Goofiness</p>
+          <p class="stat-value" data-final="1000%">0%</p>
+        </div>
+        <div class="stat-card reveal" data-delay="200">
+          <div class="stat-bar-wrap">
+            <div class="stat-bar" data-target="100"></div>
+          </div>
+          <p class="stat-label">Bicep Confidence</p>
+          <p class="stat-value" data-final="∞">0%</p>
+        </div>
+        <div class="stat-card reveal" data-delay="300">
+          <div class="stat-bar-wrap">
+            <div class="stat-bar" data-target="100"></div>
+          </div>
+          <p class="stat-label">Cuteness</p>
+          <p class="stat-value" data-final="Unmeasurable">0%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SECTION 6: EMERGENCY POOP SPRINT ═══════════════════════════════════════ -->
+  <section id="sprint" class="section section-broadcast">
+    <div class="broadcast-noise"></div>
+    <div class="container">
+      <div class="broadcast-header reveal">
+        <span class="broadcast-live">● LIVE</span>
+        <span class="broadcast-channel">Sara Sports Network</span>
+        <span class="broadcast-time" id="broadcast-time"></span>
+      </div>
+      <h2 class="section-title broadcast-title">BREAKING: Athletic Achievement of the Year</h2>
+      <p class="broadcast-subtitle">Correspondents on the ground report an unprecedented display of speed and determination.</p>
+
+      <!-- 🎥 VIDEO: Replace poop_run.mp4 in /assets/ with the actual video file -->
+      <div class="broadcast-card reveal">
+        <div class="video-container">
+          <video controls playsinline preload="metadata" class="section-video">
+            <source src="assets/poop_run.mp4" type="video/mp4" />
+            Your browser does not support this video.
+          </video>
+        </div>
+        <div class="commentary-ticker">
+          <div class="ticker-inner">
+            <span>⚡ SPEED: UNMATCHED &nbsp;·&nbsp;</span>
+            <span>🎯 MISSION URGENCY: CRITICAL &nbsp;·&nbsp;</span>
+            <span>📍 DESTINATION: CLASSIFIED &nbsp;·&nbsp;</span>
+            <span>🏃 FORM: IMPECCABLE &nbsp;·&nbsp;</span>
+            <span>🕐 TIME TO TARGET: UNKNOWN &nbsp;·&nbsp;</span>
+            <span>💨 WIND RESISTANCE: IRRELEVANT &nbsp;·&nbsp;</span>
+            <span>🔥 DETERMINATION: UNPRECEDENTED &nbsp;·&nbsp;</span>
+          </div>
+        </div>
+        <div class="broadcast-stats-row">
+          <div class="b-stat"><span class="b-stat-val">0.3s</span><span class="b-stat-lbl">Reaction Time</span></div>
+          <div class="b-stat"><span class="b-stat-val">TOP</span><span class="b-stat-lbl">Speed Class</span></div>
+          <div class="b-stat"><span class="b-stat-val">10/10</span><span class="b-stat-lbl">Determination</span></div>
+          <div class="b-stat"><span class="b-stat-val">GOLD</span><span class="b-stat-lbl">Medal Worthy</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SECTION 7: DANCE FLOOR ═══════════════════════════════════════ -->
+  <section id="dance" class="section section-neon">
+    <div class="neon-bg"></div>
+    <div class="wave-bars" id="wave-bars"></div>
+    <div class="container container--narrow">
+      <p class="section-eyebrow neon-label">Sara takes the floor</p>
+      <h2 class="section-title neon-title">When Sara Decides to Dance 💃</h2>
+      <p class="section-subtitle" style="color: #e0c9ff;">No one asked. No one needed to. The moment just called for it.</p>
+      <!-- 🎥 VIDEO: Replace dance.mp4 in /assets/ with the actual video file -->
+      <div class="dance-stage reveal">
+        <div class="neon-ring"></div>
+        <video controls playsinline preload="metadata" class="section-video dance-video">
+          <source src="assets/dance.mp4" type="video/mp4" />
+          Your browser does not support this video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SECTION 8: STUNNING SARA ═══════════════════════════════════════ -->
+  <section id="beautiful" class="section">
+    <div class="container container--narrow">
+      <p class="section-eyebrow">Every single time</p>
+      <h2 class="section-title cinematic-title">The Woman Who Still Takes<br />My Breath Away</h2>
+
+      <!-- 📸 PHOTO: Replace beautiful.jpg in /assets/ with the photo of Sara -->
+      <div class="cinematic-wrap reveal">
+        <div class="cinematic-frame">
+          <img src="assets/beautiful.jpg" alt="Sara" loading="lazy" onerror="this.classList.add('placeholder-img')" />
+          <div class="cinematic-vignette"></div>
+        </div>
+        <div class="cinematic-words">
+          <span class="cw">Beauty</span>
+          <span class="cw">Confidence</span>
+          <span class="cw">Elegance</span>
+          <span class="cw">Charm</span>
+          <span class="cw">Warmth</span>
+        </div>
+        <p class="cinematic-caption">She doesn't try to be remarkable. She just is.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SECTION 10: BIRTHDAY LETTER ═══════════════════════════════════════ -->
+  <section id="letter" class="section section-alt">
+    <div class="container container--narrow">
+      <p class="section-eyebrow">From me, to you</p>
+      <h2 class="section-title">A Letter for Sara 💌</h2>
+      <div class="letter-paper reveal">
+        <div class="letter-decoration">🌸</div>
+        <div class="letter-body">
+          <p class="letter-date">June 17th</p>
+          <p class="letter-salutation">My dearest Sara Kutty,</p>
+
+          <p>I've been thinking about what to write for days now. And honestly? I could fill a thousand pages and still not do justice to what you mean to me. So I'll just try.</p>
+
+          <p>You are the most delightfully confusing person I have ever met. One minute you're making the most ridiculous face I've ever seen on a human being — Monkey mode, fully activated — and the next minute you're saying something so thoughtful it actually stops me in my tracks. That's the Sara paradox. You are chaos and calm at the same time, and somehow it works perfectly.</p>
+
+          <p>Bubbu, you turned 23 today. And I think you should know that this year, every year, you have managed to become more yourself. More confident. More certain of what you want. You flex those biceps like you built them specifically to remind the world that you are not to be underestimated — and honestly? You're right. You never should be.</p>
+
+          <p>I love that you love football the way you do. I love that you have opinions and you argue them loudly and you feel things deeply when your team wins or loses. That competitive fire in you is one of the things I admire most — it shows up in everything you do, not just on the pitch.</p>
+
+          <p>And then there are flowers. Hand you a bouquet and something shifts — your whole face softens, your eyes light up, and for a moment the chaos disappears and it's just Sara, happy and present and glowing. I want to give you flowers forever just to keep seeing that face.</p>
+
+          <p>I think about the Monkey in you often. The goofy faces, the random sounds, the way you make even the most ordinary afternoon feel like a memory worth keeping. You don't try to be funny — you just are. And I am so, so grateful for every ridiculous moment.</p>
+
+          <p>But mostly, Sara, I want you to know this: you have made my world softer and brighter and so much more full. Being with you feels like choosing the right song for exactly the right moment. You fit. You always fit.</p>
+
+          <p>23 is yours. Take it fully, loudly, beautifully — the way only you can.</p>
+
+          <p class="letter-closing">With everything I have,</p>
+          <p class="letter-sign">Your person 💕</p>
+        </div>
+        <div class="letter-decoration letter-decoration--bottom">🌹</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FINAL CELEBRATION ═══════════════════════════════════════ -->
+  <section id="celebration" class="section section-celebration">
+    <canvas id="confetti-canvas"></canvas>
+    <div class="floating-hearts" id="floating-hearts-final"></div>
+    <div class="container">
+      <div class="celebration-content">
+        <p class="celebration-eyebrow">Today is all about you ✨</p>
+        <h2 class="celebration-title">Happy Birthday<br /><span class="celebration-name">Sara Jain</span></h2>
+        <p class="celebration-sub">"23 looks perfect on you."</p>
+        <div class="celebration-emojis">🎂&nbsp;🎉&nbsp;🌸&nbsp;💕&nbsp;⚽&nbsp;💪</div>
+        <button id="replay-btn" class="hero-cta celebration-cta">Replay Sara's Birthday Journey 🔄</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
